@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/chat.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/typing.css">
+    <title>Chatbox AI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">Tenang ChatAIme</h4>
+                        <p class="chatbox__description--header">Siap membantu mu </p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div>
+                        <div class="messages__item messages__item--operator">
+                            Can u help me?
+                        </div>
+                        <div class="messages__item messages__item--visitor">
+                            Sure!
+                        </div>
+                        <div class="messages__item messages__item--operator">
+                            I need a developer in my site.
+                        </div>
+                        <div class="messages__item messages__item--visitor">
+                            Hi... What is it? I'm a front-end developer, yay!
+                        </div>
+                        <div class="messages__item messages__item--operator" id="chatbox">
+                            <!-- Chat messages will be displayed here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="chatbox__footer">
+                    <img src="./images/icons/emojis.svg" alt="">
+                    <div class="input-box">
+                        <input type="text" id="userInput" placeholder="Type your message..." >
+                        <button onclick="sendMessage()">Send</button>
+                    </div>
+                    <img src="./images/icons/attachment.svg" alt="">
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button>button</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="./assets/js/Chat.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
